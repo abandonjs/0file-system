@@ -1,0 +1,25 @@
+{
+  "name": "file-manage-system",
+  "version": "0.0.1-beta.0",
+  "description": "",
+  "author": "ruihuag",
+  "license": "MIT",
+  "scripts": {
+    "pub": "npm publish"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/guanruihua/file-manage-system.git"
+  },
+  "files": [
+    "package.json",
+    "README.md",
+    "LICENSE",
+    "index.js"
+  ],
+  "bugs": {
+    "url": "https://github.com/guanruihua/file-manage-system/issues"
+  },
+  "homepage": "https://github.com/guanruihua/file-manage-system",
+  "keywords": []
+}
