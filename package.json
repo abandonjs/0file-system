@@ -1,5 +1,5 @@
 {
-  "name": "file-manage-system",
+  "name": "fs-hoc",
   "version": "0.0.1-beta.0",
   "description": "文件管理",
   "main": "lib/index.js",

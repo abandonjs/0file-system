@@ -1,4 +1,6 @@
-# rh-fs
+# file-manage-system
+
+![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg) [![npm version](https://img.shields.io/npm/v/file-manage-system.svg?style=flat)](https://www.npmjs.com/package/file-manage-system)
 
 - 主要对node的fs包的二级封装
 - 拓展一些对文件的操作
