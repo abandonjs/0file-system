@@ -20,7 +20,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/guanruihua/file-manage-system.git"
+    "url": "git://github.com/guanruihua/fs-hoc.git"
   },
   "files": [
     "package.json",
@@ -29,13 +29,13 @@
     "index.js"
   ],
   "bugs": {
-    "url": "https://github.com/guanruihua/file-manage-system/issues"
+    "url": "https://github.com/guanruihua/fs-hoc/issues"
   },
   "keywords": [
     "typescript",
     "fs"
   ],
-  "homepage": "https://github.com/guanruihua/file-manage-system",
+  "homepage": "https://github.com/guanruihua/fs-hoc",
   "devDependencies": {
     "@babel/core": "^7.16.12",
     "@babel/preset-env": "^7.16.11",
