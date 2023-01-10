@@ -10,6 +10,7 @@
   "author": "ruihuag",
   "license": "MIT",
   "scripts": {
+    "prepare": "husky install",
     "commitlint": "commitlint -e",
     "build2": "npx rollup -c --extend rollup.config.ts",
     "build": "npx rollup -c ./config/rollup.build.ts",
