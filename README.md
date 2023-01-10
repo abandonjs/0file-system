@@ -1,4 +1,4 @@
-# file-manage-system
+# 0fs
 
 ![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg) [![npm version](https://img.shields.io/npm/v/file-manage-system.svg?style=flat)](https://www.npmjs.com/package/file-manage-system)
 
