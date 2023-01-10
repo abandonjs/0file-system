@@ -10,14 +10,16 @@
     "removeComments": true,
     "noImplicitAny": false,
     "moduleResolution": "node",
-    "experimentalDecorators":true,
+    "experimentalDecorators": true,
     "baseUrl": "./src",
     "allowSyntheticDefaultImports": true,
     "esModuleInterop": true
   },
-  "include": ["./src/**/*"],
+  "include": [
+    "./src/**/*"
+  ],
   "exclude": [
-    "**/*/__test__/*",
+    "./config/**/*",
     "**/*/__test__/",
     "**/*/md.ts",
     "**/*/*.md"
