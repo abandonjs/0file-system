@@ -11,7 +11,7 @@ export function isDirectory(path: string): boolean {
 }
 
 
-export type MathchLike = string | string[]
+export type MatchLike = string | string[]
 /**
  * @title match
  * @description 匹配是否符合matchs规则
@@ -19,7 +19,7 @@ export type MathchLike = string | string[]
  * @param matchs string | string[]
  * @returns boolean
  */
-export function match(str: string, matchs: MathchLike): boolean {
+export function match(str: string, matchs: MatchLike): boolean {
 	if (!Array.isArray(matchs)) {
 		matchs = [matchs]
 	}

@@ -1,6 +1,8 @@
-import { readXlsx, xlsxFormat, writeXlsx, readXlsxs } from './index.test'
+import { readXlsx, xlsxFormat, writeXlsx, 
+	// readXlsxs
+ } from './index.test'
 
-console.log(readXlsxs('./test/xls')?.xls?.xls2)
+// console.log(readXlsxs('./test/xls')?.xls?.xls2)
 
 const dataSheet1 = [
 	[1, 2, 3],
