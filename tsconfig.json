@@ -16,7 +16,8 @@
     "esModuleInterop": true
   },
   "include": [
-    "./src/**/*"
+    "./src/**/*",
+    "./typings/**/*.d.ts"
   ],
   "exclude": [
     "./config/**/*",

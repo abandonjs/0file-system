@@ -1,5 +1,7 @@
 import fs from 'fs'
 
+export * from './path'
+
 /**
  * @title isDirectory 
  * @description 是否为文件夹

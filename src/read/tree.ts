@@ -1,5 +1,6 @@
 import fs from 'fs'
 import { isDirectory } from '../util'
+import type { Config, DataUnit } from './type'
 
 function __match(names: string[] = [], ignore: string[]) {
 	return names.filter((name = '') => {
@@ -21,18 +22,6 @@ function __match(names: string[] = [], ignore: string[]) {
 		}
 		return true
 	})
-}
-
-interface DataUnit {
-	name: string
-	path?: string
-	data?: string
-	children?: DataUnit[]
-}
-interface Config {
-	use?: string[]
-	depth?: 'auto' | number
-	ignore?: string[]
 }
 
 export function readDirTree(path: string, config: Config) {
