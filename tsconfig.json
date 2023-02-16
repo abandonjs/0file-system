@@ -18,7 +18,7 @@
   "include": [
     "./src/**/*",
     "./typings/**/*.d.ts"
-  ],
+, "temp/xlsx.ts"  ],
   "exclude": [
     "./config/**/*",
     "**/*/__test__/",

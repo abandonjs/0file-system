@@ -47,6 +47,7 @@
   ],
   "homepage": "https://github.com/abandonjs/0fs",
   "devDependencies": {
+    "0log": "^0.0.1",
     "@babel/core": "^7.20.5",
     "@babel/preset-env": "^7.16.11",
     "@babel/preset-typescript": "^7.16.7",
@@ -60,7 +61,8 @@
     "@types/node-xlsx": "^0.15.3",
     "@typescript-eslint/eslint-plugin": "^5.40.1",
     "@typescript-eslint/parser": "^5.40.1",
-    "check-it-type": "0.1.8",
+    "abandonjs": "^2.5.3",
+    "check-it-type": "0.1.9",
     "csvtojson": "^2.0.10",
     "eslint": "^8.25.0",
     "eslint-plugin-prettier": "^4.2.1",

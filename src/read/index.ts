@@ -1,5 +1,5 @@
 export * from './tree'
-export * from './xlsx'
-export * from './read'
 export * from './dir'
 export * from './file'
+
+export * from './type'

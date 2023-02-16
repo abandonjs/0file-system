@@ -1,12 +1,12 @@
 lockfileVersion: 5.4
 
 specifiers:
+  0log: ^0.0.1
   '@babel/core': ^7.20.5
   '@babel/preset-env': ^7.16.11
   '@babel/preset-typescript': ^7.16.7
   '@commitlint/cli': ^17.1.2
   '@commitlint/config-conventional': ^17.1.0
-  '@rollup/plugin-alias': ^4.0.3
   '@rollup/plugin-babel': ^6.0.3
   '@rollup/plugin-commonjs': ^23.0.5
   '@rollup/plugin-node-resolve': ^15.0.1
@@ -15,7 +15,8 @@ specifiers:
   '@types/node-xlsx': ^0.15.3
   '@typescript-eslint/eslint-plugin': ^5.40.1
   '@typescript-eslint/parser': ^5.40.1
-  check-it-type: 0.1.8
+  abandonjs: ^2.5.3
+  check-it-type: 0.1.9
   csvtojson: ^2.0.10
   eslint: ^8.25.0
   eslint-plugin-prettier: ^4.2.1
@@ -43,12 +44,12 @@ dependencies:
   node-xlsx: 0.21.0
 
 devDependencies:
+  0log: 0.0.1
   '@babel/core': 7.20.12
   '@babel/preset-env': 7.20.2_@babel+core@7.20.12
   '@babel/preset-typescript': 7.18.6_@babel+core@7.20.12
   '@commitlint/cli': 17.4.3
   '@commitlint/config-conventional': 17.4.3
-  '@rollup/plugin-alias': 4.0.3_rollup@2.79.1
   '@rollup/plugin-babel': 6.0.3_3dsfpkpoyvuuxyfgdbpn4j4uzm
   '@rollup/plugin-commonjs': 23.0.7_rollup@2.79.1
   '@rollup/plugin-node-resolve': 15.0.1_rollup@2.79.1
@@ -57,7 +58,8 @@ devDependencies:
   '@types/node-xlsx': 0.15.3
   '@typescript-eslint/eslint-plugin': 5.52.0_6cfvjsbua5ptj65675bqcn6oza
   '@typescript-eslint/parser': 5.52.0_7kw3g6rralp5ps6mg3uyzz6azm
-  check-it-type: 0.1.8
+  abandonjs: 2.5.3
+  check-it-type: 0.1.9
   csvtojson: 2.0.10
   eslint: 8.34.0
   eslint-plugin-prettier: 4.2.1_yrlhudqyxg2l7qvwle5bdpmrli
@@ -81,6 +83,10 @@ devDependencies:
   xlsx-extract: 0.1.3
 
 packages:
+
+  /0log/0.0.1:
+    resolution: {integrity: sha512-wsw1Tcm7o6CPdf2QELdvdHvwV/8kL0ZoPLMSx/UEy/mIqaFANpBym/+vGCEV8zpgF4fls6vami7AJJhAtgE3qQ==}
+    dev: true
 
   /@ampproject/remapping/2.2.0:
     resolution: {integrity: sha512-qRmjj8nj9qmLTQXXmaR1cck3UXSRMPrbsLJAasZpF+t3riI71BXed5ebIOYwQntykeZuhjsdweEc9BxH5Jc26w==}
@@ -1821,19 +1827,6 @@ packages:
       fastq: 1.15.0
     dev: true
 
-  /@rollup/plugin-alias/4.0.3_rollup@2.79.1:
-    resolution: {integrity: sha512-ZuDWE1q4PQDhvm/zc5Prun8sBpLJy41DMptYrS6MhAy9s9kL/doN1613BWfEchGVfKxzliJ3BjbOPizXX38DbQ==}
-    engines: {node: '>=14.0.0'}
-    peerDependencies:
-      rollup: ^1.20.0||^2.0.0||^3.0.0
-    peerDependenciesMeta:
-      rollup:
-        optional: true
-    dependencies:
-      rollup: 2.79.1
-      slash: 4.0.0
-    dev: true
-
   /@rollup/plugin-babel/6.0.3_3dsfpkpoyvuuxyfgdbpn4j4uzm:
     resolution: {integrity: sha512-fKImZKppa1A/gX73eg4JGo+8kQr/q1HBQaCGKECZ0v4YBBv3lFqi14+7xyApECzvkLTHCifx+7ntcrvtBIRcpg==}
     engines: {node: '>=14.0.0'}
@@ -2199,6 +2192,11 @@ packages:
     dependencies:
       jsonparse: 1.3.1
       through: 2.3.8
+    dev: true
+
+  /abandonjs/2.5.3:
+    resolution: {integrity: sha512-DDALa6quY75yDQ3Kx/gosTpCpAYeoWCagjyvWmwMUEl1/uZznIauUBAXEdAR4YDEY2SuF5wT8aERzK3NZqd+7Q==}
+    engines: {node: '>=16'}
     dev: true
 
   /acorn-jsx/5.3.2_acorn@7.4.1:
@@ -2599,8 +2597,8 @@ packages:
     resolution: {integrity: sha512-mT8iDcrh03qDGRRmoA2hmBJnxpllMR+0/0qlzjqZES6NdiWDcZkCNAk4rPFZ9Q85r27unkiNNg8ZOiwZXBHwcA==}
     dev: true
 
-  /check-it-type/0.1.8:
-    resolution: {integrity: sha512-hRTJzaPxQrq4+ottGh6R9wb1L7Eh5R01qMrWQG2piIDEXd8xBUmAvMWr6ddjbulTQI1co2/VIRa8UT954Sxm6A==}
+  /check-it-type/0.1.9:
+    resolution: {integrity: sha512-afW8bZzZ4R0eova0qZ0YP9h1pBYs4dmQ1t9fauKQJLffx16VA9XC0QUPIO2gWzDy9J6nY8V3dcW3xqjNzVtohg==}
     engines: {node: '>=16'}
     dev: true
 
@@ -5293,11 +5291,6 @@ packages:
   /slash/3.0.0:
     resolution: {integrity: sha512-g9Q1haeby36OSStwb4ntCGGGaKsaVSjQ68fBxoQcutl5fS1vuY18H3wSt3jFyFtrkx+Kz0V1G85A4MyAdDMi2Q==}
     engines: {node: '>=8'}
-    dev: true
-
-  /slash/4.0.0:
-    resolution: {integrity: sha512-3dOsAHXXUkQTpOYcoAxLIorMTp4gIQr5IW3iVb7A7lFIp0VHhnynm9izx6TssdrIcVIESAlVjtnO2K8bg+Coew==}
-    engines: {node: '>=12'}
     dev: true
 
   /slice-ansi/2.1.0:
