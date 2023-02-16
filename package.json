@@ -1,6 +1,6 @@
 {
-  "name": "fs-hoc",
-  "version": "0.0.2",
+  "name": "0fs",
+  "version": "0.0.5",
   "description": "文件管理",
   "main": "lib/index.js",
   "module": "lib/index.esm.js",
@@ -10,11 +10,14 @@
   "author": "ruihuag",
   "license": "MIT",
   "scripts": {
+    "prepare": "husky install",
     "commitlint": "commitlint -e",
     "build2": "npx rollup -c --extend rollup.config.ts",
     "build": "npx rollup -c ./config/rollup.build.ts",
     "dev": "ts-node-dev --respawn --transpile-only ./test/index.test.ts",
-    "test": "ts-node ./test/index.test.ts",
+    "test:old": "ts-node ./test/index.test.ts",
+    "test:run": "ts-node ./test/index.ts",
+    "test": "ts-node-dev --respawn --transpile-only ./test/index.ts",
     "restart": "rimraf dist && npm run build && npm start",
     "start": "node ./dist/index.js",
     "eslint": "eslint . --ext .ts --fix",
@@ -27,7 +30,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/guanruihua/fs-hoc.git"
+    "url": "git://github.com/abandonjs/0fs.git"
   },
   "files": [
     "package.json",
@@ -36,15 +39,15 @@
     "index.js"
   ],
   "bugs": {
-    "url": "https://github.com/guanruihua/fs-hoc/issues"
+    "url": "https://github.com/abandonjs/0fs/issues"
   },
   "keywords": [
     "typescript",
     "fs"
   ],
-  "homepage": "https://github.com/guanruihua/fs-hoc",
+  "homepage": "https://github.com/abandonjs/0fs",
   "devDependencies": {
-    "@types/node-xlsx": "^0.15.3",
+    "0log": "^0.0.1",
     "@babel/core": "^7.20.5",
     "@babel/preset-env": "^7.16.11",
     "@babel/preset-typescript": "^7.16.7",
@@ -55,9 +58,12 @@
     "@rollup/plugin-node-resolve": "^15.0.1",
     "@types/bluebird": "^3.5.36",
     "@types/node": "^18.11.2",
+    "@types/node-xlsx": "^0.15.3",
     "@typescript-eslint/eslint-plugin": "^5.40.1",
     "@typescript-eslint/parser": "^5.40.1",
-    "check-it-type": "0.1.4",
+    "abandonjs": "^2.5.3",
+    "check-it-type": "0.1.9",
+    "csvtojson": "^2.0.10",
     "eslint": "^8.25.0",
     "eslint-plugin-prettier": "^4.2.1",
     "husky": "^8.0.1",
@@ -65,7 +71,7 @@
     "lint-staged": "^12.0.3",
     "node-notifier": "^10.0.1",
     "prettier": "^2.7.1",
-    "rimraf": "^3.0.2",
+    "rimraf": "^4.1.2",
     "rollup": "^2.79.1",
     "rollup-plugin-babel": "^4.4.0",
     "rollup-plugin-eslint": "^7.0.0",
