@@ -1,0 +1,1 @@
+export const __node_version = process.version

@@ -1,6 +1,6 @@
 {
-  "name": "0fs",
-  "version": "0.0.5",
+  "name": "0file-system",
+  "version": "0.0.6",
   "description": "文件管理",
   "main": "lib/index.js",
   "module": "lib/index.esm.js",
@@ -17,6 +17,8 @@
     "dev": "ts-node-dev --respawn --transpile-only ./test/index.test.ts",
     "test:old": "ts-node ./test/index.test.ts",
     "test:run": "ts-node ./test/index.ts",
+    "test:remove": "ts-node ./src/remove/__test__/index.ts",
+    "test:write": "ts-node ./src/write/__test__/index.ts",
     "test": "ts-node-dev --respawn --transpile-only ./test/index.ts",
     "restart": "rimraf dist && npm run build && npm start",
     "start": "node ./dist/index.js",
@@ -30,7 +32,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/abandonjs/0fs.git"
+    "url": "git://github.com/abandonjs/0file-system.git"
   },
   "files": [
     "package.json",
@@ -39,18 +41,16 @@
     "index.js"
   ],
   "bugs": {
-    "url": "https://github.com/abandonjs/0fs/issues"
+    "url": "https://github.com/abandonjs/0file-system/issues"
   },
   "keywords": [
     "typescript",
     "fs"
   ],
-  "homepage": "https://github.com/abandonjs/0fs",
+  "homepage": "https://github.com/abandonjs/0file-system",
   "devDependencies": {
     "0log": "^0.0.1",
     "@babel/core": "^7.20.5",
-    "@babel/preset-env": "^7.16.11",
-    "@babel/preset-typescript": "^7.16.7",
     "@commitlint/cli": "^17.1.2",
     "@commitlint/config-conventional": "^17.1.0",
     "@rollup/plugin-babel": "^6.0.3",
@@ -58,7 +58,6 @@
     "@rollup/plugin-node-resolve": "^15.0.1",
     "@types/bluebird": "^3.5.36",
     "@types/node": "^18.11.2",
-    "@types/node-xlsx": "^0.15.3",
     "@typescript-eslint/eslint-plugin": "^5.40.1",
     "@typescript-eslint/parser": "^5.40.1",
     "abandonjs": "^2.5.3",
@@ -82,13 +81,6 @@
     "ts-node-dev": "^1.1.8",
     "ts-toolbelt": "^9.6.0",
     "typescript": "^4.8.4",
-    "unit-testing-js": "0.3.3",
-    "xlsx-extract": "^0.1.3"
-  },
-  "peerDependencies": {
-    "node-xlsx": "^0.21.0"
-  },
-  "dependencies": {
-    "node-xlsx": "^0.21.0"
+    "unit-testing-js": "0.3.3"
   }
 }

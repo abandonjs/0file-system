@@ -1,17 +1,6 @@
-import fs from 'fs'
-
+export * from './isDirectory'
 export * from './path'
-
-/**
- * @title isDirectory 
- * @description 是否为文件夹
- * @param path string 路径
- * @returns boolean
- */
-export function isDirectory(path: string): boolean {
-	return fs.lstatSync(path).isDirectory()
-}
-
+export * from './version'
 
 export type MatchLike = string | string[]
 /**
