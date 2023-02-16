@@ -17,6 +17,7 @@
     "dev": "ts-node-dev --respawn --transpile-only ./test/index.test.ts",
     "test:old": "ts-node ./test/index.test.ts",
     "test:run": "ts-node ./test/index.ts",
+    "test:remove": "ts-node ./src/remove/__test__/index.ts",
     "test": "ts-node-dev --respawn --transpile-only ./test/index.ts",
     "restart": "rimraf dist && npm run build && npm start",
     "start": "node ./dist/index.js",
@@ -49,8 +50,6 @@
   "devDependencies": {
     "0log": "^0.0.1",
     "@babel/core": "^7.20.5",
-    "@babel/preset-env": "^7.16.11",
-    "@babel/preset-typescript": "^7.16.7",
     "@commitlint/cli": "^17.1.2",
     "@commitlint/config-conventional": "^17.1.0",
     "@rollup/plugin-babel": "^6.0.3",

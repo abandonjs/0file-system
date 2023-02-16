@@ -16,9 +16,8 @@
     "esModuleInterop": true
   },
   "include": [
-    "./src/**/*",
-    "./typings/**/*.d.ts"
-, "temp/xlsx.ts"  ],
+    "./src/**/*"
+  ],
   "exclude": [
     "./config/**/*",
     "**/*/__test__/",

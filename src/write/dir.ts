@@ -7,7 +7,7 @@ type Options = {
 }
 
 
-function _mkdir(path: Path, options: Options = {
+function _writeDir(path: Path, options: Options = {
 	mode: 0o777,
 	recursive: false
 }): Promise<NodeJS.ErrnoException | null> {
@@ -19,17 +19,18 @@ function _mkdir(path: Path, options: Options = {
 }
 
 /**
- * 创建文件目录
+ * @title writeDir
+ * @description 创建文件目录
  * @param path 文件目录
  * @param options 
  * @returns 
  */
-export async function mkdir(path: Path, options: Options = {
+export async function writeDir(path: Path, options: Options = {
 	mode: 0o777,
 	recursive: false
 }): Promise<NodeJS.ErrnoException | null> {
 
-	const result = await _mkdir(path, options)
+	const result = await _writeDir(path, options)
 
 	if (!result) return null
 
@@ -44,7 +45,7 @@ export async function mkdir(path: Path, options: Options = {
 
 	for (let i = 1; i < paths.length; i++) {
 		_path += '/' + paths[i]
-		await mkdir(_path, options)
+		await writeDir(_path, options)
 		if (i === paths.length - 1) {
 			return null
 		}
