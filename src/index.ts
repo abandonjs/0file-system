@@ -1,5 +1,4 @@
 export * from './write'
-export * from './write/mk'
 export * from './remove'
 export * from './read'
 export * from './util'

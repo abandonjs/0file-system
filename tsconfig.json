@@ -17,7 +17,7 @@
   },
   "include": [
     "./src/**/*"
-  ],
+, "temp/temp"  ],
   "exclude": [
     "./config/**/*",
     "**/*/__test__/",

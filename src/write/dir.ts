@@ -1,55 +1,19 @@
-import fs from 'fs'
-
-type Path = string
-type Options = {
-	recursive?: boolean,
-	mode?: string | number
-}
-
-
-function _writeDir(path: Path, options: Options = {
-	mode: 0o777,
-	recursive: false
-}): Promise<NodeJS.ErrnoException | null> {
-	return new Promise(resolve => {
-		fs.mkdir(path, options, error => {
-			resolve(error)
-		})
-	})
-}
+import fs, { MakeDirectoryOptions } from 'fs'
 
 /**
  * @title writeDir
  * @description 创建文件目录
- * @param path 文件目录
- * @param options 
+ * @param path {string} 文件目录
+ * @param options {MakeDirectoryOptions={recursive:true}} 
  * @returns 
  */
-export async function writeDir(path: Path, options: Options = {
-	mode: 0o777,
-	recursive: false
-}): Promise<NodeJS.ErrnoException | null> {
+export async function mkdir(path: string, options: MakeDirectoryOptions = {}) {
 
-	const result = await _writeDir(path, options)
-
-	if (!result) return null
-
-	if (result.code === "EEXIST") {
-		return result
+	try {
+		fs.mkdirSync(path, { recursive: true, ...options })
+		return true
+	} catch (error) {
+		console.error(error)
+		return false
 	}
-
-	if (result.code !== 'ENOENT') return result
-
-	const paths: string[] = path.split('/') || []
-	let _path = '.'
-
-	for (let i = 1; i < paths.length; i++) {
-		_path += '/' + paths[i]
-		await writeDir(_path, options)
-		if (i === paths.length - 1) {
-			return null
-		}
-	}
-
-	return result
 }
