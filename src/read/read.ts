@@ -7,9 +7,16 @@ import type { ReadTreeOptions, TreeDataUnit } from './type'
 
 export interface ReadOptions extends ReadTreeOptions {
 	/**
-	 * default: false
+	 * @description 树状数据
+	 * @default: false
 	 */
 	tree?: boolean
+	/**
+	 * @description 数据合并成一个字符串(优先级大于<tree>)
+	 * @default false
+	 * @version 0.0.7
+	 */
+	dataMerge?: boolean
 }
 
 /**
