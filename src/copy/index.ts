@@ -45,7 +45,7 @@ export function copy(fromPath: string, toPath: string, config: CopyConfig = {}):
 
 		// 文件是目录且未创建
 		if (file.isDirectory() && !fs.existsSync(tagFile)) {
-			if (clearEmptyDir && isEmptyDirectory(srcFile)) continue;
+			if (clearEmptyDir && isEmptyDirectory(srcFile, ignore)) continue;
 			fs.mkdirSync(tagFile)
 			copy(srcFile, tagFile, config)
 			continue;
