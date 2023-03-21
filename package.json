@@ -1,6 +1,6 @@
 {
   "name": "0file-system",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "文件管理",
   "main": "lib/index.js",
   "module": "lib/index.esm.js",
@@ -19,6 +19,7 @@
     "test:run": "ts-node ./test/index.ts",
     "test:remove": "ts-node ./src/remove/__test__/index.ts",
     "test:write": "ts-node ./src/write/__test__/index.ts",
+    "test:copy": "ts-node ./src/copy/__test__/index.ts",
     "test": "ts-node-dev --respawn --transpile-only ./test/index.ts",
     "restart": "rimraf dist && npm run build && npm start",
     "start": "node ./dist/index.js",
