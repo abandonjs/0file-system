@@ -28,8 +28,7 @@ export function isEmptyDirectory(path: PathLike, ignore?: string | string[]): bo
 
 	const list = fs.readdirSync(path)
 
-	return list.filter(item => !(match(item, ignoreList))).length > 0
-
+	return list.filter(item => !(match(item, ignoreList))).length === 0
 }
 
 

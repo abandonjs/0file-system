@@ -5,3 +5,4 @@ src/*/__test__
 *.config.ts
 *.config.js
 temp/
+config/
