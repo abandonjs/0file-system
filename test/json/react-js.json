@@ -1,0 +1,43 @@
+{
+	"function": {
+		"prefix": "!fn",
+		"body": [
+			"function ${TM_FILENAME_BASE}${1}() {",
+			"\treturn",
+			"}"
+		],
+		"description": "function"
+	},
+	"react-function-Component": {
+		"prefix": "!fn-C",
+		"body": [
+			"import React from \"react\"",
+			"",
+			"export function ${TM_FILENAME_BASE}${0}(props){",
+			"\tconst {} = props",
+			"\treturn (",
+			"\t\t<div>",
+			"\t\t\t${TM_FILENAME_BASE}${0}",
+			"\t\t\t{JSON.stringify(Object.keys(props))}",
+			"\t\t</div>",
+			"\t)",
+			"}",
+			""
+		],
+		"description": "React-Function-Element-tsx"
+	},
+	"react-function-simple-function": {
+		"prefix": "!fn-c",
+		"body": [
+			"import React from \"react\"",
+			"",
+			"export function ${TM_FILENAME_BASE}${0}(){",
+			"\treturn (<div>",
+			"\t\t${TM_FILENAME_BASE}${0}",
+			"\t</div>)",
+			"}",
+			""
+		],
+		"description": "React-Function-Element-tsx"
+	}
+}

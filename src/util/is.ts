@@ -1,4 +1,4 @@
-import { isArray } from 'check-it-type';
+import { isArray } from 'asura-eye';
 import fs, { PathLike } from 'fs'
 import { match } from './match';
 

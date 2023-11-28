@@ -1,0 +1,31 @@
+{
+	"HTML Template": {
+		"prefix": "!rh",
+		"body": [
+			"<!DOCTYPE html>",
+			"<html lang=\"en\">",
+			"",
+			"<head>",
+			"\t<meta charset=\"UTF-8\">",
+			"\t<meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\">",
+			"\t<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">",
+			"\t<link rel=\"stylesheet\" href=\"https://cdn.jsdelivr.net/npm/0static/css/test-body.css\">",
+			"\t<title>${TM_FILENAME_BASE:Document}</title>",
+			"</head>",
+			"",
+			"<style>",
+			"",
+			"</style>",
+			"",
+			"<body>",
+			"$1",
+			"\t<script src=\"https://cdn.jsdelivr.net/npm/0static/js/addWindowSize.js\" defer></script>",
+			"\t<script>",
+			"\t</script>",
+			"</body>",
+			"",
+			"</html>"
+		],
+		"description": "Ruihuag HTML Template"
+	}
+}

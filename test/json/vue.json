@@ -1,0 +1,30 @@
+{
+  "Vue Script + Template": {
+    "scope": "vue",
+    "prefix": "!js",
+    "body": [
+      "<script setup>",
+      "\t$1",
+      "</script>",
+      "",
+      "<template>",
+      "\t$2",
+      "</template>"
+    ],
+    "description": "Vue Script + Template"
+  },
+  "Vue Script + Template + TS": {
+    "scope": "vue",
+    "prefix": "!ts",
+    "body": [
+      "<script setup lang=\"ts\">",
+      "\t$1",
+      "</script>",
+      "",
+      "<template>",
+      "\t$2",
+      "</template>"
+    ],
+    "description": "Vue Script + Template"
+  }
+}

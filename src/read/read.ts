@@ -22,12 +22,12 @@ export interface ReadOptions extends ReadTreeOptions {
 /**
  * @title read<T>
  * @description 读取文件(夹)
- * @param path {string}
- * @param options {?ReadOptions}
- * @returns T | string | string[]
+ * @param {string} path
+ * @param {?ReadOptions} options 
+ * @returns {T|string|string[]}
  */
-export function read<T = string>(path: string, options?: ReadOptions): T | string | string[] | TreeDataUnit[] {
-	const { tree = false, encoding = 'utf8', flag = 'r', withFileTypes } = options || {}
+export function read<T = string>(path: string, options: ReadOptions = {}): T | string | string[] | TreeDataUnit[] {
+	const { tree = false, encoding = 'utf8', flag = 'r', withFileTypes } = options
 	if (isDirectory(path)) {
 		if (tree) return readTree(path, options)
 		return readDir(path, { encoding, withFileTypes })

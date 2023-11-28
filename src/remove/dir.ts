@@ -1,4 +1,4 @@
-import { isArray } from 'check-it-type'
+import { isArray } from 'asura-eye'
 import fs, { RmDirOptions } from 'fs'
 import { readDir } from '../read'
 import { isDirectory } from '../util'

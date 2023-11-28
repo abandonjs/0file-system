@@ -3,12 +3,12 @@ import { mkdir } from './dir'
 
 /**
  * @title writeFile 
- * @param path {string}
- * @param data {string | NodeJS.ArrayBufferView}
- * @param option {?WriteFileOptions}
+ * @param {string} path 
+ * @param {string | NodeJS.ArrayBufferView} data 
+ * @param {?WriteFileOptions} option 
  * @returns {boolean}
  */
-export function writeFile(path: string, data: string | NodeJS.ArrayBufferView, option?: WriteFileOptions) {
+export function writeFile(path: string, data: string | NodeJS.ArrayBufferView, option?: WriteFileOptions): boolean {
 	try {
 		const urlUnits: string[] = path.split(/\/|\\/)
 		urlUnits.pop()
