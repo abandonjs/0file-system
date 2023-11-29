@@ -46,9 +46,13 @@
   "bugs": {
     "url": "https://github.com/abandonjs/0file-system/issues"
   },
+  "publishConfig": {
+    "guanruihua:registry": "https://npm.pkg.github.com"
+  },
   "keywords": [
     "typescript",
-    "fs"
+    "fs",
+    "node"
   ],
   "homepage": "https://github.com/abandonjs/0file-system",
   "devDependencies": {
