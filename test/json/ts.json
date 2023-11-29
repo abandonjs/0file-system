@@ -1,0 +1,12 @@
+{
+	"export-function-ts": {
+		"prefix": "!fn-e",
+		"body": [
+			"export function ${TM_FILENAME_BASE}${0}(){",
+			"\treturn",
+			"}",
+			""
+		],
+		"description": "export-function-ts"
+	}
+}

@@ -1,5 +1,5 @@
-import fs from 'fs'
-import { readXlsx } from './index.test'
+// import fs from 'fs'
+// import { readXlsx } from './index.test'
 
 // console.log(readXlsx('./test/xls/b.xlsx').length)
 // console.log(readXlsx('./test/xls/b.xlsx'))

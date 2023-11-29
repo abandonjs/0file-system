@@ -1,0 +1,305 @@
+{
+  "Markdwon init": {
+    "prefix": "!md",
+    "body": [
+      "# [`${TM_FILENAME_BASE}`]()"
+    ],
+    "description": "Markdwon init"
+  },
+  "css block": {
+    "prefix": [
+      "`cs",
+      "`css",
+      "``cs",
+      "``css",
+      "```cs",
+      "```css"
+    ],
+    "body": [
+      "```css",
+      "${1}",
+      "```"
+    ],
+    "description": "css block"
+  },
+  "less block": {
+    "prefix": [
+      "`les",
+      "`less",
+      "``les",
+      "``less",
+      "```les",
+      "```less"
+    ],
+    "body": [
+      "```less",
+      "${1}",
+      "```"
+    ],
+    "description": "less block"
+  },
+  "Python block": {
+    "prefix": [
+      "``py"
+    ],
+    "body": [
+      "```py",
+      "${1}",
+      "```"
+    ],
+    "description": "Python block"
+  },
+  "js block": {
+    "prefix": [
+      "`js",
+      "``js",
+      "```js"
+    ],
+    "body": [
+      "```js",
+      "${1}",
+      "```"
+    ],
+    "description": "js block"
+  },
+  "json block": {
+    "prefix": [
+      "`json",
+      "``json",
+      "```json"
+    ],
+    "body": [
+      "```json",
+      "${1}",
+      "```"
+    ],
+    "description": "json block"
+  },
+  "json Object block": {
+    "prefix": [
+      "`json{",
+      "``json{",
+      "```json{"
+    ],
+    "body": [
+      "```json",
+      "{",
+      "\t${1}",
+      "}",
+      "```"
+    ],
+    "description": "json block"
+  },
+  "ts block": {
+    "prefix": [
+      "`ts",
+      "``ts",
+      "```ts"
+    ],
+    "body": [
+      "```ts",
+      "${1}",
+      "```"
+    ],
+    "description": "ts block"
+  },
+  "tsx block": {
+    "prefix": [
+      "`tx",
+      "`tsx",
+      "``tx",
+      "``tsx",
+      "```tx",
+      "```tsx"
+    ],
+    "body": [
+      "```tsx",
+      "${1}",
+      "```"
+    ],
+    "description": "tsx block"
+  },
+  "jsx block": {
+    "prefix": [
+      "`jx",
+      "`jsx",
+      "``jx",
+      "``jsx",
+      "```jx",
+      "```jsx"
+    ],
+    "body": [
+      "```tsx",
+      "${1}",
+      "```"
+    ],
+    "description": "tsx block"
+  },
+  "shell block": {
+    "prefix": [
+      "`shell",
+      "``shell",
+      "```shell"
+    ],
+    "body": [
+      "```shell",
+      "${1}",
+      "```"
+    ],
+    "description": "shell block"
+  },
+  "html block": {
+    "prefix": [
+      "`html",
+      "`htm",
+      "``html",
+      "``htm",
+      "```html",
+      "```htm"
+    ],
+    "body": [
+      "```html",
+      "${1}",
+      "```"
+    ],
+    "description": "html block"
+  },
+  "html css block": {
+    "prefix": [
+      "`htcs",
+      "`csht"
+    ],
+    "body": [
+      "```html",
+      "${1}",
+      "```",
+      "",
+      "```css",
+      "${2}",
+      "```"
+    ],
+    "description": "html css block"
+  },
+  "html js block": {
+    "prefix": [
+      "`htjs",
+      "`jsht"
+    ],
+    "body": [
+      "```html",
+      "${1}",
+      "```",
+      "",
+      "```js",
+      "${2}",
+      "```"
+    ],
+    "description": "html js block"
+  },
+  "Markdown Table 2 Cols": {
+    "prefix": [
+      "tt",
+      "tt2"
+    ],
+    "body": [
+      "|:----|:----|"
+    ],
+    "description": "Markdown Table"
+  },
+  "Markdown Table 3 Cols": {
+    "prefix": [
+      "tt3"
+    ],
+    "body": [
+      "|:----|:----|:----|"
+    ],
+    "description": "Markdown Table"
+  },
+  "Markdown Table 4 Cols": {
+    "prefix": [
+      "tt4"
+    ],
+    "body": [
+      "|:----|:----|:----|:----|"
+    ],
+    "description": "Markdown Table"
+  },
+  "h1": {
+    "prefix": [
+      "t1"
+    ],
+    "body": [
+      "#\t${1}",
+      ""
+    ],
+    "description": "h1"
+  },
+  "h2": {
+    "prefix": [
+      "t2"
+    ],
+    "body": [
+      "##\t${1}",
+      ""
+    ],
+    "description": "h2"
+  },
+  "h3": {
+    "prefix": [
+      "t3"
+    ],
+    "body": [
+      "###\t${1}",
+      ""
+    ],
+    "description": "h3"
+  },
+  "h4": {
+    "prefix": [
+      "t4"
+    ],
+    "body": [
+      "####\t${1}",
+      ""
+    ],
+    "description": "h4"
+  },
+  "h5": {
+    "prefix": [
+      "t5"
+    ],
+    "body": [
+      "#####\t${1}",
+      ""
+    ],
+    "description": "h5"
+  },
+  "h6": {
+    "prefix": [
+      "t6"
+    ],
+    "body": [
+      "######\t${1}",
+      ""
+    ],
+    "description": "h6"
+  },
+  "code": {
+    "prefix": [
+      "\\c"
+    ],
+    "body": [
+      "<code>${1}</code>"
+    ],
+    "description": "code"
+  },
+  "md-img": {
+    "prefix": [
+      "md-img"
+    ],
+    "body": [
+      "<img src=\"${1}\" style=\"zoom:0.25;\" />"
+    ],
+    "description": "md-img"
+  }
+}

@@ -1,5 +1,5 @@
 import fs from 'fs'
-import { isFunction, isRegExp } from 'check-it-type'
+import { isFunction, isRegExp } from 'asura-eye'
 import { ReadFileRules } from '../config'
 import type { ReadFileOptions } from './type'
 

@@ -1,4 +1,4 @@
-import { isString } from "check-it-type"
+import { isString } from "asura-eye"
 
 export type MatchLike = string | string[]
 /**

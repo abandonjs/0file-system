@@ -19,8 +19,8 @@ export interface CopyConfig {
 /**
  * @title copy
  * @description 复制文件(夹)
- * @param fromPath {string} 资源路径
- * @param toPath {string} 目标路径
+ * @param {string} fromPath 资源路径
+ * @param {string} toPath 目标路径
  * @returns 
  * @since 0.1.0
  */

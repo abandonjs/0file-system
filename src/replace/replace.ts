@@ -15,8 +15,9 @@ export interface ReplaceRule {
 }
 
 export interface ReplaceConfig {
-	from: string,
-	to: string,
+	from: string
+	to: string
+	include: string[]
 	rules?: ReplaceRule[]
 	/**
 	 * @description 删除多余文件夹
@@ -31,15 +32,15 @@ export interface ReplaceConfig {
 	 * @description 保留源文件
 	 * @default false
 	 */
-	keepSourceFiles?:boolean
+	keepSourceFile?: boolean
 }
 
 export function replace(config: ReplaceConfig) {
 
-	const { from, to, ignore, clearEmptyDir = true, keepSourceFiles = false } = config
+	const { from, to, ignore, include, clearEmptyDir = true, keepSourceFile = false } = config
 
 	if (!isDirectory(from)) {
-		if (match(from, ignore)) return;
+		if (!match(from, include) && match(from, ignore)) return;
 		fs.copyFileSync(from, to, fs.constants.COPYFILE_FICLONE)
 		return;
 	}
@@ -52,7 +53,7 @@ export function replace(config: ReplaceConfig) {
 		// 目标文件
 		const tagFile = path(to, file.name)
 
-		if (match(srcFile, ignore)) continue;
+		if (!match(from, include) && match(srcFile, ignore)) continue;
 
 		const newConfig: ReplaceConfig = JSON.parse(JSON.stringify(config))
 		newConfig.from = srcFile
@@ -71,7 +72,7 @@ export function replace(config: ReplaceConfig) {
 			continue;
 		}
 		if (!file.isDirectory()) {
-			keepSourceFiles && fs.copyFileSync(srcFile, tagFile, fs.constants.COPYFILE_FICLONE)
+			keepSourceFile && fs.copyFileSync(srcFile, tagFile, fs.constants.COPYFILE_FICLONE)
 			const data = read(srcFile).toString()
 			writeFile(tagFile + '.json', JSON.stringify({ data }))
 		}
