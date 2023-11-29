@@ -59,6 +59,7 @@
     "@rollup/plugin-babel": "^6.0.3",
     "@rollup/plugin-commonjs": "^23.0.5",
     "@rollup/plugin-node-resolve": "^15.0.1",
+    "@rollup/plugin-typescript": "^11.1.5",
     "@types/bluebird": "^3.5.36",
     "@types/node": "^18.11.2",
     "@typescript-eslint/eslint-plugin": "^5.40.1",

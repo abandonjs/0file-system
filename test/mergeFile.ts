@@ -1,4 +1,4 @@
-{
+export default {
   "html": {
     "HTML Template": {
       "prefix": "!rh",

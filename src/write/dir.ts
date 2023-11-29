@@ -1,4 +1,4 @@
-import fs, { MakeDirectoryOptions } from 'fs'
+import fs, { type MakeDirectoryOptions } from 'fs'
 
 /**
  * @title writeDir
@@ -7,7 +7,7 @@ import fs, { MakeDirectoryOptions } from 'fs'
  * @param options {MakeDirectoryOptions={recursive:true}} 
  * @returns 
  */
-export async function mkdir(path: string, options: MakeDirectoryOptions = {}) {
+export function mkdir(path: string, options: MakeDirectoryOptions = {}) {
 
 	try {
 		fs.mkdirSync(path, { recursive: true, ...options })
