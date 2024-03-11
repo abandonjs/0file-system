@@ -4,8 +4,8 @@ import fs from 'fs'
  * @description 读取文件夹配置选项
  */
 export interface ReadDirOptions {
-	encoding: BufferEncoding
-	withFileTypes?: false
+  encoding: BufferEncoding
+  withFileTypes?: false
 }
 
 /**
@@ -16,5 +16,5 @@ export interface ReadDirOptions {
  * @returns string[]
  */
 export function readDir(path: string, options?: ReadDirOptions): string[] {
-	return fs.readdirSync(path, options) || []
+  return fs.readdirSync(path, options) || []
 }
